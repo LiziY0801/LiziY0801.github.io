@@ -1,4 +1,3 @@
-/* --- 全局暗黑风样式 --- */
 body {
   background-color: #121212;
   color: #ffffff;
@@ -8,7 +7,6 @@ body {
   font-size: 18px;
 }
 
-/* --- 容器布局 --- */
 .container {
   max-width: 900px;
   margin: 60px auto;
@@ -18,29 +16,22 @@ body {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
-/* --- 打字机动画文字 --- */
-.typed-text {
+h1 {
+  text-align: center;
   font-size: 2.8em;
   color: #00bcd4;
+  margin-bottom: 10px;
   font-weight: bold;
 }
 
-.cursor {
-  display: inline-block;
-  background-color: #00bcd4;
-  width: 2px;
-  height: 1em;
-  animation: blink 0.7s infinite;
-  vertical-align: bottom;
-  margin-left: 3px;
+.subtitle {
+  text-align: center;
+  color: #ccc;
+  font-size: 1.25em;
+  margin-bottom: 30px;
+  line-height: 1.6;
 }
 
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
-}
-
-/* --- 头像 --- */
 .avatar {
   width: 80px;
   height: 80px;
@@ -52,22 +43,11 @@ body {
   box-shadow: 0 0 8px rgba(0, 188, 212, 0.4);
 }
 
-/* --- 副标题（教育背景） --- */
-.subtitle {
-  text-align: center;
-  color: #ccc;
-  font-size: 1.25em;
-  margin-bottom: 30px;
-  line-height: 1.6;
-}
-
-/* --- 各区域标题 --- */
 h2 {
   color: #00bcd4;
   margin-top: 30px;
 }
 
-/* --- 技能标签 --- */
 .skills ul {
   list-style: none;
   padding: 0;
@@ -83,13 +63,11 @@ h2 {
   color: #fff;
 }
 
-/* --- 联系方式 --- */
 .contact a {
   color: #80dfff;
   text-decoration: none;
 }
 
-/* --- 页脚 --- */
 footer {
   text-align: center;
   margin-top: 50px;
