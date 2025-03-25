@@ -1,4 +1,19 @@
 /* Dark theme + layout styles */
+<script>
+  const text = "Ion's AI Learning";
+  const typedText = document.querySelector(".typed-text");
+  let index = 0;
+
+  function type() {
+    if (index < text.length) {
+      typedText.textContent += text.charAt(index);
+      index++;
+      setTimeout(type, 120);  // 打字速度（毫秒）
+    }
+  }
+
+  window.onload = type;
+</script>
 
 body {
   background-color: #121212;
@@ -74,4 +89,25 @@ footer {
   margin-top: 50px;
   color: #888;
   font-size: 0.9em;
+}
+.typed-text {
+  font-size: 2.8em;
+  color: #00bcd4;
+  font-weight: bold;
+}
+
+.cursor {
+  display: inline-block;
+  background-color: #00bcd4;
+  width: 2px;
+  height: 1em;
+  animation: blink 0.7s infinite;
+  vertical-align: bottom;
+  margin-left: 3px;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
 }
