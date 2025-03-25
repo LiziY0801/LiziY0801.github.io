@@ -32,13 +32,14 @@ h1 {
 }
 
 .avatar {
-  width: 120px;
-  height: 120px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   display: block;
   margin: 0 auto 20px;
   object-fit: cover;
-  border: 3px solid #00bcd4;
+  border: 2px solid #00bcd4;
+  box-shadow: 0 0 8px rgba(0, 188, 212, 0.4);
 }
 
 h2 {
