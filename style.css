@@ -6,11 +6,11 @@ body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
-  font-size: 18px; /* 原来是默认16，可以适当放大 */
+  font-size: 20px; /* 原来是默认16，可以适当放大 */
 }
 
 .container {
-  max-width: 900px; /* 原来是 700px，变宽一点 */
+  max-width: 1000px; /* 原来是 700px，变宽一点 */
   margin: 60px auto;
   padding: 40px;     /* 增加内边距，让内容不挤 */
   background: #1f1f1f;
