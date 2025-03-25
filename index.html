@@ -13,6 +13,7 @@
     <h1>
       <span class="typed-text"></span><span class="cursor">|</span>
     </h1>
+
     <p class="subtitle">A student at Dalian University of Technology<br>
       B.S. in Software Engineering</p>
 
@@ -39,5 +40,25 @@
   <footer>
     © 2025 Lizi — Built with ❤️ on GitHub Pages
   </footer>
+
+  <!-- 打字机动画逻辑 -->
+  <script>
+    const text = "Ion's AI Learning";
+    const typedText = document.querySelector(".typed-text");
+    const cursor = document.querySelector(".cursor");
+    let index = 0;
+
+    function type() {
+      if (index < text.length) {
+        typedText.textContent += text.charAt(index);
+        index++;
+        setTimeout(type, 120);  // 控制打字速度
+      } else {
+        cursor.style.display = "none"; // 打完隐藏光标
+      }
+    }
+
+    window.onload = type;
+  </script>
 </body>
 </html>
